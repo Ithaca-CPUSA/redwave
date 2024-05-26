@@ -1,6 +1,8 @@
 <template>
     <header
-      class="mx-auto max-w-2xl md:max-w-6xl flex items-center justify-between py-8 px-4 xl:px-0">
+      class="py-8 sticky">
+      <div class="mx-auto md:max-w-6xl flex items-center justify-between px-4 xl:px-0">
+
       <div class="flex items-center">
         <button class="block md:hidden mr-4 flex flex-col items-center"
           @click="showMobileMenu">
@@ -24,12 +26,14 @@
       </div>
       <div class="flex items-center">
         <nav class="flex items-center hidden md:block">
+          <NavItem href="/articles">About</NavItem>
           <NavItem href="/articles">Articles</NavItem>
           <NavItem href="/events">Events</NavItem>
-          <NavItem href="/events">Program</NavItem>
+          <NavItem href="/events">Get Involved</NavItem>
         </nav>
         <a href="/donate"
           class="bg-brandRed px-8 py-2 rounded-sm text-brandWhite font-semibold uppercase">Donate</a>
+      </div>
       </div>
     </header>
 </template>
