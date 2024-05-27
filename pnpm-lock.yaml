@@ -14,6 +14,9 @@ importers:
       vue:
         specifier: ^3.4.21
         version: 3.4.27(typescript@5.4.5)
+      vue-instagram-embed:
+        specifier: ^1.0.0
+        version: 1.0.0(vue@3.4.27(typescript@5.4.5))
     devDependencies:
       '@tailwindcss/typography':
         specifier: ^0.5.13
@@ -602,6 +605,10 @@ packages:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
 
+  highlight.js@9.18.5:
+    resolution: {integrity: sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==}
+    deprecated: Support has ended for 9.x series. Upgrade to @latest
+
   is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
@@ -938,6 +945,14 @@ packages:
         optional: true
       terser:
         optional: true
+
+  vue-hljs@1.1.2:
+    resolution: {integrity: sha512-KRNdqY8Z54Tn6M34azYmKybW9YL5uhAnjpRTkIaxJOP2e0jkGkTBXzkYJFOFwBC+lWj+1SBs5PLvc6O3RKhpsQ==}
+    peerDependencies:
+      vue: ^2.0.0
+
+  vue-instagram-embed@1.0.0:
+    resolution: {integrity: sha512-sQAa4ew6g4OE20XQzc/uYw40jFOoIFSFpfqvhaKNpgkQkBG5aNRxqdLsgAJtXAj2Q2H9kvQ/xxbiLGoQTrIsbQ==}
 
   vue-template-compiler@2.7.16:
     resolution: {integrity: sha512-AYbUWAJHLGGQM7+cNTELw+KsOG9nl2CnSv467WobS5Cv9uk3wFcnr1Etsz2sEIHEZvw1U+o9mRlEO6QbZvUPGQ==}
@@ -1473,6 +1488,8 @@ snapshots:
 
   he@1.2.0: {}
 
+  highlight.js@9.18.5: {}
+
   is-binary-path@2.1.0:
     dependencies:
       binary-extensions: 2.3.0
@@ -1784,6 +1801,17 @@ snapshots:
       rollup: 4.18.0
     optionalDependencies:
       fsevents: 2.3.3
+
+  vue-hljs@1.1.2(vue@3.4.27(typescript@5.4.5)):
+    dependencies:
+      highlight.js: 9.18.5
+      vue: 3.4.27(typescript@5.4.5)
+
+  vue-instagram-embed@1.0.0(vue@3.4.27(typescript@5.4.5)):
+    dependencies:
+      vue-hljs: 1.1.2(vue@3.4.27(typescript@5.4.5))
+    transitivePeerDependencies:
+      - vue
 
   vue-template-compiler@2.7.16:
     dependencies:

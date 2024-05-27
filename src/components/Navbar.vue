@@ -1,6 +1,5 @@
 <template>
-    <header
-      class="py-8 sticky">
+  <header class="py-8 sticky">
       <div class="mx-auto md:max-w-6xl flex items-center justify-between px-4 xl:px-0">
 
       <div class="flex items-center">
@@ -16,14 +15,10 @@
             menu
           </span>
         </button>
-        <div class="flex items-center">
-          <HamSicIcon class="h-12 w-12 mr-3" />
-          <div>
-            <span class="text-2xl font-bold tracking-tight">CPUSA</span>
-            <p class="pl-1 text-xs font-semibold tracking-tight">Ithaca, NY</p>
-          </div>
-        </div>
+        <LogoLockup/>
       </div>
+      <div class="flex flex-col">
+        <SocialMenu class="hidden md:block"/>
       <div class="flex items-center">
         <nav class="flex items-center hidden md:block">
           <NavItem href="/articles">About</NavItem>
@@ -35,10 +30,12 @@
           class="bg-brandRed px-8 py-2 rounded-sm text-brandWhite font-semibold uppercase">Donate</a>
       </div>
       </div>
+      </div>
     </header>
 </template>
 
 <script setup lang="ts">
-import HamSicIcon from '../assets/logo.svg?component';
+import LogoLockup from './LogoLockup.vue';
 import NavItem from './NavItem.vue';
+import SocialMenu from './SocialMenu.vue'
 </script>
