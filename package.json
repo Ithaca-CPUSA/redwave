@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.19",
+    "@tailwindcss/forms": "^0.5.7",
     "vue": "^3.4.21",
     "vue-instagram-embed": "^1.0.0"
   },

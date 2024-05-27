@@ -1,12 +1,12 @@
 <template>
-    <footer class="my-4">
+    <footer class="my-12">
       <div class="mx-auto max-w-6xl px-4 xl:px-0">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <LogoLockup class="md:mb-20"/>
-        <nav class="col-span-2 flex flex-col md:flex-row">
+        <nav class="col-span-2 flex flex-col md:flex-row justify-end">
           <NavItem href="https://cpusa.org">National Party Website</NavItem>
-          <NavItem href="https://cpusa.org">National Party Website</NavItem>
-          <NavItem href="https://cpusa.org">National Party Website</NavItem>
+          <NavItem href="https://cpusa.org">People's World</NavItem>
+          <NavItem href="https://cpusa.org">Marxist Internet Archive</NavItem>
         </nav>
         </div>
       </div>
